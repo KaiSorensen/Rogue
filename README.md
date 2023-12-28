@@ -1,2 +1,2 @@
 # Rogue
-automated interview editor
+Kai's Automated Interview Editor
