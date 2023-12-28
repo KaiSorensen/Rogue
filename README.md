@@ -29,7 +29,16 @@ Kai's Automated Interview Editor
 
 - synchronizing the audio/video files. 
     What if the audio tracks were turned on at different times? We'd that information, because the syncing has to be perfect.
-    - solution 1: clap as soon as the audio and video are turned on for each person, and align them based on when the volume peaks
+    - solution 1: clap as soon as the audio and video are turned on for each person, and align them based on when the volume peaks. This would easily enable the synchronization of the audio tracks, but the video splicing would still be an issue since I'm using FFMpeg. I could have some overhead where it finds the point of the clap using the video's audio, the
     - solution 2: call on some other software 
     - solution 3: ask for extra user input indicating at what point in the audio/video to treat at the start
 
+- file sizes
+    - what if the video file is stupidly large (double digit gigabytes)? performing read/write in very short increments could be extremely slow
+    - I'd need to make sure there's room on the computer (maybe I could see what the largest video file is, then only create the output video file is there is twice as much available storage, to be safe)
+    - BUGS: what if I write in a bug that creates an infinitely large file? I'd want to be checking for this somehow. Maybe I could test it in a virtual environment
+
+- file types
+    - I'd at least want the audio files to be the same since I'll be comparing them directly and looking for specific patterns (such as the clap, or higher/lower volumes)
+    - the video file types depends on FFMpeg
+    - What if the files are compressed?
