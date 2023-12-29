@@ -42,3 +42,6 @@ Kai's Automated Interview Editor
     - I'd at least want the audio files to be the same since I'll be comparing them directly and looking for specific patterns (such as the clap, or higher/lower volumes)
     - the video file types depends on FFMpeg
     - What if the files are compressed?
+
+- calling FFMpeg
+    - might this be a bash script instead of a c file?
