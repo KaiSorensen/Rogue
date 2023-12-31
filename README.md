@@ -45,3 +45,5 @@ Kai's Automated Interview Editor
 
 - calling FFMpeg
     - might this be a bash script instead of a c file?
+
+- format of JSON timestamps
