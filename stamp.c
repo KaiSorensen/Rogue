@@ -157,6 +157,7 @@ double syncAudio(FILE* a1, FILE* a2, int beginSecond, int endSecond)
     //the core functionality comes next, two loops, one for each file
 
     //finds the two claps in a1
+    //DOES NOT WORK BECAUSE VOLUME IS EQUALIZED
     fseek(a1, startByte, SEEK_SET);
     while (ftell(a1) < endByte) {
         previousSample = currentSample;
