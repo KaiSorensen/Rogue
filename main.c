@@ -47,6 +47,9 @@ u0 print_usage ( u0 )
 int main ( int argc, const char *argv[] )
 {
 
+    // Initialize the log module
+    log_init(0, true);
+
     // TODO: Parse command line arguments
     if ( argc < 3 ) print_usage();
 
@@ -54,8 +57,8 @@ int main ( int argc, const char *argv[] )
     wav _A = { 0 },
         _B = { 0 };
 
-    // Initialize the log module
-    log_init(0, true);
+    // Say hi
+    log_info("Rogue\n");
 
     // Construct the first WAV file
     if ( wav_construct(&_A, argv[1]) == 0 ) goto failed_to_load_wav;
