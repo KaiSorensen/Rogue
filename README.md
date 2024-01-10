@@ -1,5 +1,5 @@
 # Rogue
-Kai's Automated Interview Editor
+Kai's Automated Interview Editor (in progress)
 
 
 ## TO DO
