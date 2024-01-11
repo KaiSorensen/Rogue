@@ -228,6 +228,7 @@ int createStamps(FILE* a1, FILE* a2, double startStamp)
 }
 
 //  "Is they Jacob's? Don't lie to me mayne." -Kanye
+/*
 int main(int argc, char *argv[]) 
 {
     //USAGE
@@ -254,3 +255,4 @@ int main(int argc, char *argv[])
     fclose(a2);
     return 0;
 }
+*/
